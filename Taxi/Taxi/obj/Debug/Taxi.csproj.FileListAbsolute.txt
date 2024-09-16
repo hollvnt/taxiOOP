@@ -1,0 +1,222 @@
+C:\Users\Asus\source\repos\Taxi\Taxi\bin\Debug\Taxi.exe.config
+C:\Users\Asus\source\repos\Taxi\Taxi\bin\Debug\Taxi.exe
+C:\Users\Asus\source\repos\Taxi\Taxi\bin\Debug\Taxi.pdb
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\Taxi.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\LoginScreen.g.cs
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\App.g.cs
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\Taxi_MarkupCompile.cache
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\Taxi_MarkupCompile.lref
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\LoginScreen.baml
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\MainWindow.baml
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\Taxi.g.resources
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\Taxi.Properties.Resources.resources
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\Taxi.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\Taxi.exe
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\Taxi.pdb
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\RegisterScreen.g.cs
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\RegisterScreen.baml
+C:\Users\Asus\source\repos\Taxi\Taxi\bin\Debug\EntityFramework.dll
+C:\Users\Asus\source\repos\Taxi\Taxi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Asus\source\repos\Taxi\Taxi\bin\Debug\EntityFramework.xml
+C:\Users\Asus\source\repos\Taxi\Taxi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\Taxi.csproj.CopyComplete
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\MainUser.g.cs
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\MainUser.baml
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\DriverScreen.g.cs
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\DriverScreen.baml
+C:\Users\Asus\source\repos\Taxi\Taxi\bin\Debug\MaterialDesignColors.dll
+C:\Users\Asus\source\repos\Taxi\Taxi\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Asus\source\repos\Taxi\Taxi\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Asus\source\repos\Taxi\Taxi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Asus\source\repos\Taxi\Taxi\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Asus\source\repos\Taxi\Taxi\obj\Debug\App.baml
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\bin\Debug\Taxi.exe.config
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\bin\Debug\Taxi.exe
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\bin\Debug\Taxi.pdb
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\bin\Debug\EntityFramework.dll
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\bin\Debug\MaterialDesignColors.dll
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\bin\Debug\EntityFramework.xml
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\Taxi.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\DriverScreen.g.cs
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\LoginScreen.g.cs
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\MainUser.g.cs
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\RegisterScreen.g.cs
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\App.g.cs
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\Taxi_MarkupCompile.cache
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\Taxi_MarkupCompile.lref
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\App.baml
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\DriverScreen.baml
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\LoginScreen.baml
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\MainUser.baml
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\MainWindow.baml
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\RegisterScreen.baml
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\Taxi.g.resources
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\Taxi.Properties.Resources.resources
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\Taxi.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\Taxi.csproj.CopyComplete
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\Taxi.exe
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\Taxi.pdb
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\AdminScreen.g.cs
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\AdminScreen.baml
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\Resources\lang.ru-RU.baml
+C:\Users\Asus\source\repos\Taxi — копия\Taxi\obj\Debug\Resources\lang.baml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\bin\Debug\Taxi.exe.config
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\bin\Debug\Taxi.exe
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\bin\Debug\Taxi.pdb
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\bin\Debug\EntityFramework.dll
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\bin\Debug\MaterialDesignColors.dll
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\bin\Debug\EntityFramework.xml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\Taxi.csprojAssemblyReference.cache
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\AdminScreen.g.cs
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\DriverScreen.g.cs
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\LoginScreen.g.cs
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\MainUser.g.cs
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\RegisterScreen.g.cs
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\App.g.cs
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\Taxi_MarkupCompile.cache
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\Taxi_MarkupCompile.lref
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\App.baml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\AdminScreen.baml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\DriverScreen.baml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\LoginScreen.baml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\MainUser.baml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\MainWindow.baml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\RegisterScreen.baml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\Resources\lang.ru-RU.baml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\Resources\lang.baml
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\Taxi.g.resources
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\Taxi.Properties.Resources.resources
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\Taxi.csproj.GenerateResource.cache
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\Taxi.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\Taxi.csproj.CopyComplete
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\Taxi.exe
+C:\Users\Asus\source\epos\Taxi — копия — копия\Taxi\obj\Debug\Taxi.pdb
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\bin\Debug\Taxi.exe.config
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\bin\Debug\Taxi.exe
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\bin\Debug\Taxi.pdb
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\bin\Debug\MaterialDesignColors.dll
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\AdminScreen.g.cs
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\DriverScreen.g.cs
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\LoginScreen.g.cs
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\MainUser.g.cs
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\MainWindow.g.cs
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\RegisterScreen.g.cs
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\App.g.cs
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\Taxi_MarkupCompile.cache
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\Taxi_MarkupCompile.lref
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\App.baml
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\AdminScreen.baml
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\DriverScreen.baml
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\LoginScreen.baml
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\MainUser.baml
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\MainWindow.baml
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\RegisterScreen.baml
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\Resources\lang.ru-RU.baml
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\Resources\lang.baml
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\Taxi.g.resources
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\Taxi.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\Taxi.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\Taxi.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\Taxi.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\Taxi.exe
+C:\Users\Lenovo\Desktop\Taxi — копия — копия\Taxi\obj\Debug\Taxi.pdb
+C:\Users\Lenovo\Desktop\Taxi\Taxi\bin\Debug\Taxi.exe.config
+C:\Users\Lenovo\Desktop\Taxi\Taxi\bin\Debug\Taxi.exe
+C:\Users\Lenovo\Desktop\Taxi\Taxi\bin\Debug\Taxi.pdb
+C:\Users\Lenovo\Desktop\Taxi\Taxi\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\Desktop\Taxi\Taxi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Desktop\Taxi\Taxi\bin\Debug\MaterialDesignColors.dll
+C:\Users\Lenovo\Desktop\Taxi\Taxi\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Lenovo\Desktop\Taxi\Taxi\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\Desktop\Taxi\Taxi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Desktop\Taxi\Taxi\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Lenovo\Desktop\Taxi\Taxi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Lenovo\Desktop\Taxi\Taxi\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\Taxi.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\AdminScreen.g.cs
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\DriverScreen.g.cs
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\LoginScreen.g.cs
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\MainUser.g.cs
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\MainWindow.g.cs
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\RegisterScreen.g.cs
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\App.g.cs
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\Taxi_MarkupCompile.cache
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\Taxi_MarkupCompile.lref
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\App.baml
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\AdminScreen.baml
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\DriverScreen.baml
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\LoginScreen.baml
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\MainUser.baml
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\MainWindow.baml
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\RegisterScreen.baml
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\Resources\lang.ru-RU.baml
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\Resources\lang.baml
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\Taxi.g.resources
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\Taxi.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\Taxi.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\Taxi.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\Taxi.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\Taxi.exe
+C:\Users\Lenovo\Desktop\Taxi\Taxi\obj\Debug\Taxi.pdb
+D:\2 курс\курсач\Taxi\Taxi\bin\Debug\Taxi.exe.config
+D:\2 курс\курсач\Taxi\Taxi\bin\Debug\Taxi.exe
+D:\2 курс\курсач\Taxi\Taxi\bin\Debug\Taxi.pdb
+D:\2 курс\курсач\Taxi\Taxi\bin\Debug\EntityFramework.dll
+D:\2 курс\курсач\Taxi\Taxi\bin\Debug\EntityFramework.SqlServer.dll
+D:\2 курс\курсач\Taxi\Taxi\bin\Debug\MaterialDesignColors.dll
+D:\2 курс\курсач\Taxi\Taxi\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\2 курс\курсач\Taxi\Taxi\bin\Debug\EntityFramework.xml
+D:\2 курс\курсач\Taxi\Taxi\bin\Debug\EntityFramework.SqlServer.xml
+D:\2 курс\курсач\Taxi\Taxi\bin\Debug\MaterialDesignColors.pdb
+D:\2 курс\курсач\Taxi\Taxi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\2 курс\курсач\Taxi\Taxi\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Taxi.csproj.AssemblyReference.cache
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Taxi.csproj.SuggestedBindingRedirects.cache
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\AdminScreen.g.cs
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\DriverScreen.g.cs
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\LoginScreen.g.cs
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\MainUser.g.cs
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\MainWindow.g.cs
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\RegisterScreen.g.cs
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\App.g.cs
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Taxi_MarkupCompile.cache
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Taxi_MarkupCompile.lref
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\App.baml
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\AdminScreen.baml
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\DriverScreen.baml
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\LoginScreen.baml
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\MainUser.baml
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\MainWindow.baml
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\RegisterScreen.baml
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Resources\lang.ru-RU.baml
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Resources\lang.baml
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Taxi.g.resources
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Taxi.Properties.Resources.resources
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Taxi.csproj.GenerateResource.cache
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Taxi.csproj.CoreCompileInputs.cache
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Taxi.csproj.CopyComplete
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Taxi.exe
+D:\2 курс\курсач\Taxi\Taxi\obj\Debug\Taxi.pdb

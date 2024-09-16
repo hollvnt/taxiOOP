@@ -1,0 +1,46 @@
+﻿<Window x:Class="Taxi.RegisterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Taxi"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="RegisterScreen" Height="512" Width="300" Background="#ffd300" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        Icon="C:\Users\Lenovo\Desktop\Taxi\Taxi\Resources\icon.ico">
+    <Grid x:Name="GridBottomBar" MouseDown="GridBottomBar_MouseDown">
+        <DockPanel>
+            <Menu  Margin="10,0,0,0" VerticalAlignment="Top" DockPanel.Dock="Top" Background="{x:Null}">
+                <MenuItem x:Name="menuLanguage" Foreground="White" Header="{DynamicResource m_menu_Language}" Height="23" FontWeight="Bold"/>
+            </Menu>
+        </DockPanel>
+        <Rectangle Fill="{x:Null}"  Stroke="#FFEAEAEA" Width="18" Height="18" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,2,0"></Rectangle>
+        <Button x:Name="Power" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Right" VerticalAlignment="Top" Width="25" Height="25" Click="Power_Click" Background="{x:Null}"  BorderBrush="{x:Null}" Foreground="White" Margin="0,-3,-2,0">
+            <materialDesign:PackIcon Kind="Power"/>
+        </Button>
+
+        <Border Background="#2e3137" CornerRadius="20" Margin="20,25,20,20">
+            <StackPanel Margin="20">
+                <Label Content="{DynamicResource m_Regisert}" Foreground="White" FontSize="25" HorizontalAlignment="Center"></Label>
+                <Separator Background="White"></Separator>
+                <Label Content="{DynamicResource m_Regisert_Name}" Foreground="White"></Label>
+                <TextBox Name="txtUserName" Background="#545d6a" Foreground="White" FontSize="18" ></TextBox>
+                <Label Content="{DynamicResource m_Regisert_LastName}" Foreground="White"></Label>
+                <TextBox Name="txtLastName" Background="#545d6a" Foreground="White" FontSize="18"></TextBox>
+                <Label Content="{DynamicResource m_Regisert_Mail}" Foreground="White"></Label>
+                <TextBox Name="txtMail" Background="#545d6a" Foreground="White" FontSize="18"></TextBox>
+                <Label Content="{DynamicResource m_Regisert_Contact}" Foreground="White"></Label>
+                <TextBox Name="txtNumber" Background="#545d6a" Foreground="White" FontSize="18" TextChanged="txtNumber_TextChanged"></TextBox>
+                <Label Content="{DynamicResource m_Regisert_Password}" Foreground="White"></Label>
+                <PasswordBox Name="txtPassword" Background="#545d6a" Foreground="White" FontSize="18"></PasswordBox>
+                <Label Content="{DynamicResource m_Regisert_ConfirmPassword}" Foreground="White"></Label>
+                <PasswordBox Name="txtPassword1" Background="#545d6a" Foreground="White" FontSize="18"></PasswordBox>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="btnSubmit" Click="btnSubmit_Click" BorderBrush="{x:Null}"  Content="{DynamicResource m_Regisert_Submit}" Margin="0,10,0,0" Background="#545d6a" Foreground="White" FontSize="16" HorizontalAlignment="Left" Width="112" Height="30"/>
+                    <Button x:Name="btnLogin" Click="btnLogin_Click" BorderBrush="{x:Null}"  Content="{DynamicResource m_Regisert_Login}"  Background="#545d6a" Foreground="White" FontSize="16" Height="30" Width="102" Margin="8,10,-1,0"/>
+                </StackPanel>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

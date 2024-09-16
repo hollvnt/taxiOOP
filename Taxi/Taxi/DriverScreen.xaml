@@ -1,0 +1,300 @@
+﻿<Window x:Class="Taxi.DriverScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Taxi"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="DriverScreen" Height="481.657" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None"
+        Icon="C:\Users\Lenovo\Desktop\Taxi\Taxi\Resources\icon.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="1" Grid.Row="1" Background="White">
+            <ScrollViewer x:Name="ScrollHistoryMyOrders" Visibility="Hidden">
+                <Grid Width="500">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3">
+                        <ItemsControl x:Name="ItemOrders2">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                        <Border CornerRadius="5" BorderThickness="3" Background="White" BorderBrush="Black" Width="350" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" Height="100">
+                            <Grid>
+                                <Border CornerRadius="0" BorderThickness="3" Background ="#FFFFD300" Width="100" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-3,-3,0,0"/>
+                                <TextBlock HorizontalAlignment="Left"  Text="{Binding DateOrder,StringFormat=\{0:dd.MM.yy\}}" Margin="10 10" FontSize="20" FontWeight="Bold"></TextBlock>
+                                <TextBlock HorizontalAlignment="Right" Text="{Binding Status}" Margin="15 5" FontSize="20" FontWeight="Bold"></TextBlock>
+                                <TextBlock Text="{Binding Address1}" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Center" FontSize="22" FontWeight="Bold"></TextBlock>
+                                <materialDesign:PackIcon VerticalAlignment="Center" HorizontalAlignment="Center" Width="80" Kind="ArrowRight" Margin="151,58,113,26.6"/>
+                                <TextBlock Text="{Binding Address2}" HorizontalAlignment="Right" Margin="20,35,10,0" VerticalAlignment="Center" FontSize="22" FontWeight="Bold"></TextBlock>
+                            </Grid>
+                        </Border>
+                        </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+            <ScrollViewer x:Name="ScrollSettings" Visibility="Hidden">
+                <Grid Width="500">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="280"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3">
+                        <TextBlock Text="{DynamicResource m_UserOrder_Settings}" HorizontalAlignment="Center" FontSize="32" FontWeight="Bold" Margin="0 40"></TextBlock>
+                        <DockPanel Margin=" 0 120">
+                            <TextBlock Text="{DynamicResource m_UserOrder_SelectLanguages}" FontSize="20" FontWeight="Bold" Margin="20,20,10,10"></TextBlock>
+                            <Menu  Margin="0,25,0,0" VerticalAlignment="Top" DockPanel.Dock="Top" Background="{x:Null}">
+                                <MenuItem x:Name="menuLanguage" Foreground="Black" FontSize="20" Header="{DynamicResource m_UserOrder_English}" Height="23" FontWeight="Bold"/>
+                            </Menu>
+                        </DockPanel>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+            <ScrollViewer x:Name="ScrollMyOrders" Visibility="Hidden">
+                <Grid Width="600">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3">
+                        <DataGrid AutoGenerateColumns="False" IsReadOnly="True" x:Name="CurrentOrdersGrid">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding Address1}" Header="{DynamicResource m_UserOrder_From}" Width="80"/>
+                                <DataGridTextColumn Binding="{Binding Address2}" Header="{DynamicResource m_UserOrder_To}" Width="80"/>
+                                <DataGridTextColumn Binding="{Binding DateOrder}" Header="{DynamicResource m_UserOrder_Time}" Width="110"/>
+                                <DataGridTextColumn Binding="{Binding Contact}" Header="{DynamicResource m_Regisert_Contact}" Width="110"/>
+                                <DataGridTextColumn Binding="{Binding Price}" Header="{DynamicResource m_UserOrder_Price}" Width="70"/>
+                                <DataGridTemplateColumn Header="{DynamicResource m_UserOrder_ConfirmCancel}" Width="240">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                <Button x:Name="completeButton" BorderBrush="{x:Null}" Background="#FFFFD300" Click="CompleteButton_Click" Content="{DynamicResource m_UserOrder_Confirm}"></Button>
+                                                <Button x:Name="CancelButton" BorderBrush="{x:Null}" Background="#FFB41818" Click="CancelButton_Click" Content="{DynamicResource m_UserOrder_Cancel}"></Button>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+            <ScrollViewer x:Name="ScrollProfile" Visibility="Hidden">
+                <Grid Width="500">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="280"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                        <TextBlock Text="{DynamicResource m_UserOrder_YourProfile}" HorizontalAlignment="Right" FontSize="32" VerticalAlignment="Center" Margin="0,20,0,60" FontWeight="Bold"></TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3">
+                        <Border VerticalAlignment="Top" Background="#FFF4F4F4" CornerRadius="20" Margin="110,90,110,0" Height="340" >
+                            <StackPanel>
+                                <TextBlock Text="{DynamicResource m_Regisert_Name}" FontSize="18" Margin="20,10,0,0" FontWeight="Bold"></TextBlock>
+                                <TextBox x:Name="ProfileName"  FontSize="14"  VerticalAlignment="Top" Width="250" Margin="20,0,10,10"></TextBox>
+                                <TextBlock Text="{DynamicResource m_Regisert_LastName}" FontSize="18" Margin="20,10,0,0" FontWeight="Bold"></TextBlock>
+                                <TextBox  x:Name="ProfileLastName"  FontSize="14" VerticalAlignment="Top" Width="250" Margin="20,0,10,10"></TextBox>
+                                <TextBlock Text="{DynamicResource m_Regisert_Contact}" FontSize="18" Margin="20,15,0,0" FontWeight="Bold"></TextBlock>
+                                <TextBox  x:Name="ProfileNumber" FontSize="14" VerticalAlignment="Top" Width="250" Margin="20,0,10,10"></TextBox>
+                                <TextBlock Text="{DynamicResource m_Regisert_Mail}" FontSize="18" Margin="20,15,0,0" FontWeight="Bold"></TextBlock>
+                                <TextBox  x:Name="ProfileMail" FontSize="14" VerticalAlignment="Top" Width="250" Margin="20,0,10,10"></TextBox>
+                                <Button x:Name="SaveProfileButton" Background="#FFFFD300" BorderBrush="{x:Null}" Content="{DynamicResource m_UserOrder_SaveProfile}" Margin="20,5" Foreground="Black" Click="SaveProfileButton_Click"></Button>
+                            </StackPanel>
+                        </Border>
+
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+                        <Border VerticalAlignment="Top" Background="#FFF4F4F4" CornerRadius="10" Margin="561,44,-341,0" Height="80">
+                            <Grid>
+
+                                <TextBlock Margin="456,-104,-451,104" Text="{DynamicResource m_UserOrder_ProfilePicture}"  FontWeight="Bold" FontSize="14" />
+                                <Ellipse Height="50" Width="50" HorizontalAlignment="Left" Margin="10,10,0,0">
+                                    <Ellipse.Fill>
+                                        <ImageBrush x:Name="Avatar" ImageSource="{Binding Avatar}"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <!--<Image x:Name="Avatar" Height="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="50"  Margin="5 10"/>-->
+                                <Button Content="{DynamicResource m_UserOrder_Browse}" Height="23" Background="#FFFFD300" BorderBrush="{x:Null}" Padding="1,1,3,3" Foreground="Black" HorizontalAlignment="Left" Margin="76,0,0,20" Name="btnBrowse" VerticalAlignment="Bottom" Width="82" Click="AddAvatar_Click" />
+                                <Button Content="{DynamicResource m_UserOrder_Save}" Background="#FFFFD300" BorderBrush="{x:Null}" Padding="1,1,3,3" Foreground="Black" Height="23"  Margin="178,0,20,20" Name="btnSave" VerticalAlignment="Bottom" Width="82" Click="btnSave_Click" />
+                                <!--<Button x:Name="AddAvatar" Click="AddAvatar_Click" Background="{x:Null}" BorderBrush="{x:Null}" Width="50" Height="50" >
+                                    <materialDesign:PackIcon Kind="Add" Width="20" Height="20" Foreground="Black"></materialDesign:PackIcon>
+                                </Button>-->
+                            </Grid>
+                        </Border>
+                    </Grid>
+
+                </Grid>
+
+            </ScrollViewer>
+            <ScrollViewer x:Name="ScrollOrder" Visibility="Visible">
+                <Grid Width="600">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="200"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3">
+                        <DataGrid AutoGenerateColumns="False" IsReadOnly="True" x:Name="ordersGrid">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding Address1}" Header="{DynamicResource m_UserOrder_From}" Width="100"/>
+                                <DataGridTextColumn Binding="{Binding Address2}" Header="{DynamicResource m_UserOrder_To}" Width="100"/>
+                                <DataGridTextColumn Binding="{Binding DateOrder}" Header="{DynamicResource m_UserOrder_Time}" Width="120"/>
+                                <DataGridTextColumn Binding="{Binding Contact}" Header="{DynamicResource m_Regisert_Contact}" Width="110"/>
+                                <DataGridTemplateColumn Header="{DynamicResource m_UserOrder_AcceptIgnore}" Width="220">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                <Button x:Name="AcceptButton" Margin="5 0" BorderBrush="{x:Null}" Background="#FFFFD300" Click="AcceptButton_Click" Content="{DynamicResource m_UserOrder_Accept}"></Button>
+                                                <Button x:Name="IgnoreButton" BorderBrush="{x:Null}" Background="#FFB41818" Click="IgnoreButton_Click" Content="{DynamicResource m_UserOrder_Ignore}"></Button>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+
+
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+        <Grid Grid.Row="1" Background="#242223">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="5*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect Color="#FFD1D1D1" ShadowDepth="1"/>
+            </Grid.Effect>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="4">
+                    <materialDesign:PackIcon Kind="Taxi" Foreground="White" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Grid.ColumnSpan="4" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2">
+                    <TextBlock Text="Taxi Service" Foreground="White" FontSize="25" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBlock>
+                </StackPanel>
+                <Grid Grid.Row="2" Background="#FFFFD300"></Grid>
+                <Grid Grid.Row="3" Grid.Column="3" Background="#FFFFD300"></Grid>
+                <Grid Grid.Row="2" Grid.Column="2" Background="#FFFFD300"></Grid>
+                <Grid Grid.Row="2" Grid.Column="4" Background="#FFFFD300"></Grid>
+                <Grid Grid.Row="3" Grid.Column="1" Background="#FFFFD300"></Grid>
+                <Grid Grid.Row="3" Grid.Column="5" Background="#FFFFD300"></Grid>
+            </Grid>
+            <StackPanel Grid.Row="1">
+                <Button x:Name="MyProfile" Click="MyProfile_Click" Margin="0,30,0,0" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="Account" VerticalAlignment="Center"/>
+                        <TextBlock  Margin="25,0,0,0" HorizontalAlignment="Left" Text="{DynamicResource m_User_Profile}" FontSize="16" Foreground="White" Height="21" VerticalAlignment="Top"></TextBlock>
+                    </Grid>
+                </Button>
+                <Button  Click="AddOrderButton_Click" Margin="0,15,0,0"  Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="ClipboardList" VerticalAlignment="Center"/>
+                        <TextBlock Margin="25,0,0,0" HorizontalAlignment="Left" Text="{DynamicResource m_UserOrder_OrderList}" FontSize="16" Foreground="White"></TextBlock>
+                    </Grid>
+                </Button>
+                <Button x:Name="MyOrdersButton" Click="MyOrdersButton_Click" Margin="0,15,0,0"  Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="OrderCheckboxDescending" VerticalAlignment="Center"/>
+                        <TextBlock Margin="25,0,0,0" HorizontalAlignment="Left" Text="{DynamicResource m_UserOrder_CurrentOrders}" FontSize="16" Foreground="White"></TextBlock>
+                    </Grid>
+                </Button>
+                <Button x:Name="HistoryButton" Click="HistoryButton_Click"  Margin="0,15,0,0" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="History" VerticalAlignment="Center"/>
+                        <TextBlock Margin="25,0,0,0" HorizontalAlignment="Left" Text="{DynamicResource m_User_History}" FontSize="16" Foreground="White"></TextBlock>
+                    </Grid>
+                </Button>
+                <Button Margin="0,15,0,0" x:Name="SettingsButton" Click="SettingsButton_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="Settings" VerticalAlignment="Center"/>
+                        <TextBlock Margin="25,0,0,0" HorizontalAlignment="Left" Text="{DynamicResource m_User_Settings}" FontSize="16" Foreground="White"></TextBlock>
+                    </Grid>
+                </Button>
+                <Button Margin="0,15,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Click="Exit_Click">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="Logout" VerticalAlignment="Center"/>
+                        <TextBlock Margin="25,0,0,0" HorizontalAlignment="Left" Text="{DynamicResource m_User_Logout}" FontSize="16" Foreground="White"></TextBlock>
+                    </Grid>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="GridBottomBar" Grid.ColumnSpan="2" Background="#ffd300" MouseDown="GridBottomBar_MouseDown">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <materialDesign:PopupBox  Background="{x:Null}"  BorderBrush="{x:Null}" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Center"  PlacementMode="BottomAndAlignRightEdges" StaysOpen="False" RenderTransformOrigin="0.504,0.563" Margin="0,2,0,2.4" Width="27">
+                    <StackPanel Width="180" Height="70" Orientation="Horizontal">
+                        <Ellipse Height="50" Width="50" HorizontalAlignment="Left" VerticalAlignment="Center" >
+                            <Ellipse.Fill>
+                                <ImageBrush x:Name="Avatar1" ImageSource="{Binding Avatar}"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Button Height="70" HorizontalAlignment="Right" VerticalAlignment="Top" Background="#FFEAEAEA" x:Name="ButtonHello"></Button>
+
+                    </StackPanel>
+                </materialDesign:PopupBox>
+                <Button Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White">
+                    <materialDesign:PackIcon Kind="Notifications"/>
+                </Button>
+                <Button x:Name="Power" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="25" Height="25" Click="Power_Click" Background="{x:Null}"  BorderBrush="{x:Null}" Foreground="White">
+                    <materialDesign:PackIcon Kind="Power"/>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Window>

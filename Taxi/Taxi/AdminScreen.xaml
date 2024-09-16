@@ -1,0 +1,221 @@
+﻿<Window x:Class="Taxi.AdminScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Taxi"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="AdminScreen" Height="480" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None"
+        Icon="">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="1" Grid.Row="1" Background="White">
+            <ScrollViewer x:Name="ScrollUsers" Visibility="Hidden">
+                <Grid Width="550">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3" Margin="0,0,0.4,75.4">
+                        <DataGrid AutoGenerateColumns="False" IsReadOnly="False" x:Name="CurrentUsersGrid">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding UserID}" Header="{DynamicResource m_UserOrder_ID}" Width="90"/>
+                                <DataGridTextColumn Binding="{Binding UserName}" Header="{DynamicResource m_Regisert_Name}" Width="100"/>
+                                <DataGridTextColumn Binding="{Binding LastName}" Header="{DynamicResource m_Regisert_LastName}" Width="110"/>
+                                <DataGridTextColumn Binding="{Binding Contact}" Header="{DynamicResource m_Regisert_Contact}" Width="120"/>
+                                <DataGridTextColumn Binding="{Binding Password}" Header="{DynamicResource m_Regisert_Password}" Width="100"/>
+                                <DataGridTextColumn Binding="{Binding Mail}" Header="{DynamicResource m_Regisert_Mail}" Width="180"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+                        <Button Content="{DynamicResource m_UserOrder_Refresh}" Click="updateButton_Click" Width="100" Margin="0,70,350,0" BorderBrush="{x:Null}" Background="#FFFFD300"></Button>
+                        <Button Content="{DynamicResource m_UserOrder_Delete}" Click="deleteButton_Click" Width="100" Margin="0,70,80,0" BorderBrush="{x:Null}" Background="#FFFFD300"></Button>
+                        <Button Content="Search" Click="Search2_Click" Width="100" Margin="180,70,0,0" BorderBrush="{x:Null}" Background="#FFFFD300"></Button>
+                        <TextBox x:Name="SearchText2" Width="100" Height="30" Margin="400,70,0,0" Foreground="Black"></TextBox>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+            <ScrollViewer x:Name="ScrollDrivers" Visibility="Visible">
+                <Grid Width="550">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3" Margin="0,0,0.4,75.4">
+                        <DataGrid AutoGenerateColumns="False" IsReadOnly="False" x:Name="CurrentDriversGrid">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding DriverID}" Header="{DynamicResource m_UserOrder_ID}" Width="90"/>
+                                <DataGridTextColumn Binding="{Binding DriverName}" Header="{DynamicResource m_Regisert_Name}" Width="100"/>
+                                <DataGridTextColumn Binding="{Binding DriverLastName}" Header="{DynamicResource m_Regisert_LastName}" Width="100"/>
+                                <DataGridTextColumn Binding="{Binding Contact}" Header="{DynamicResource m_Regisert_Contact}" Width="110"/>
+                                <DataGridTextColumn Binding="{Binding Password}" Header="{DynamicResource m_Regisert_Password}" Width="100"/>
+                                <DataGridTextColumn Binding="{Binding Mail}" Header="{DynamicResource m_Regisert_Mail}" Width="160"/>
+                                
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+                        <Button Content="{DynamicResource m_UserOrder_Refresh}" Click="updateButton_Click" Width="100" Margin="0,70,350,0" BorderBrush="{x:Null}" Background="#FFFFD300"></Button>
+                        <Button Content="{DynamicResource m_UserOrder_Delete}" Click="deleteButton1_Click" Width="100" Margin="0,70,80,0" BorderBrush="{x:Null}" Background="#FFFFD300"></Button>
+                        <Button Content="Search" Click="Search1_Click" Width="100" Margin="180,70,0,0" BorderBrush="{x:Null}" Background="#FFFFD300"></Button>
+                        <TextBox x:Name="SearchText1" Width="100" Height="30" Margin="400,70,0,0" Foreground="Black"></TextBox>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+            <ScrollViewer x:Name="ScrollSettings" Visibility="Hidden">
+                <Grid Width="500">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="280"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3">
+                        <TextBlock Text="{DynamicResource m_UserOrder_Settings}" HorizontalAlignment="Center" FontSize="32" FontWeight="Bold" Margin="0 40"></TextBlock>
+                        <DockPanel Margin=" 0 120">
+                            <TextBlock Text="{DynamicResource m_UserOrder_SelectLanguages}" FontSize="20" FontWeight="Bold" Margin="20,20,10,10"></TextBlock>
+                            <Menu  Margin="0,25,0,0" VerticalAlignment="Top" DockPanel.Dock="Top" Background="{x:Null}">
+                                <MenuItem x:Name="menuLanguage" Foreground="Black" FontSize="20" Header="{DynamicResource m_UserOrder_English}" Height="23" FontWeight="Bold"/>
+                            </Menu>
+                        </DockPanel>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+            <ScrollViewer x:Name="ScrollOrders" Visibility="Hidden">
+                <Grid Width="550">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3" Margin="0,0,0.4,75.4">
+                        <DataGrid AutoGenerateColumns="False" IsReadOnly="False" x:Name="CurrentOrdersGrid">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding OrderID}" Header="{DynamicResource m_UserOrder_ID}" Width="50"/>
+                                <DataGridTextColumn Binding="{Binding Address1}" Header="{DynamicResource m_UserOrder_From}" Width="90"/>
+                                <DataGridTextColumn Binding="{Binding Address2}" Header="{DynamicResource m_UserOrder_To}" Width="90"/>
+                                <DataGridTextColumn Binding="{Binding Price}" Header="{DynamicResource m_UserOrder_Price}" Width="80"/>
+                                <DataGridTextColumn Binding="{Binding UserID}" Header="{DynamicResource m_UserOrder_UserID}" Width="80"/>
+                                <DataGridTextColumn Binding="{Binding DriverID}" Header="{DynamicResource m_UserOrder_DriverID}" Width="80"/>
+                                <DataGridTextColumn Binding="{Binding DateOrder}" Header="{DynamicResource m_UserOrder_Time}" Width="100"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+                        <Button Content="{DynamicResource m_UserOrder_Refresh}" Click="updateButton_Click" Width="100" Margin="0,70,350,0" BorderBrush="{x:Null}" Background="#FFFFD300"></Button>
+                        <Button Content="{DynamicResource m_UserOrder_Delete}" Click="deleteButton2_Click" Width="100" Margin="0,70,80,0" BorderBrush="{x:Null}" Background="#FFFFD300"></Button>
+                        <Button Content="Search" Click="Search_Click" Width="100" Margin="180,70,0,0" BorderBrush="{x:Null}" Background="#FFFFD300"></Button>
+                        <TextBox x:Name="SearchText" Width="100" Height="30" Margin="400,70,0,0" Foreground="Black"></TextBox>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+            
+        </Grid>
+        <Grid Grid.Row="1" Background="#242223">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="5*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect Color="#FFD1D1D1" ShadowDepth="1"/>
+            </Grid.Effect>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="4">
+                    <materialDesign:PackIcon Kind="Taxi" Foreground="White" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Grid.ColumnSpan="4" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2">
+                    <TextBlock Text="Taxi Service" Foreground="White" FontSize="25" HorizontalAlignment="Left" Margin="0,10,0,0"></TextBlock>
+                </StackPanel>
+                <Grid Grid.Row="2" Background="#FFFFD300"></Grid>
+                <Grid Grid.Row="3" Grid.Column="3" Background="#FFFFD300"></Grid>
+                <Grid Grid.Row="2" Grid.Column="2" Background="#FFFFD300"></Grid>
+                <Grid Grid.Row="2" Grid.Column="4" Background="#FFFFD300"></Grid>
+                <Grid Grid.Row="3" Grid.Column="1" Background="#FFFFD300"></Grid>
+                <Grid Grid.Row="3" Grid.Column="5" Background="#FFFFD300"></Grid>
+            </Grid>
+            <StackPanel Grid.Row="1">
+                <Button x:Name="UsersButton" Click="UsersButton_Click" Margin="0,35,0,0"  Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="UserAdd" VerticalAlignment="Center"/>
+                        <TextBlock Margin="25,0,0,0" HorizontalAlignment="Left" Text="{DynamicResource m_UserOrder_Users}" FontSize="16" Foreground="White"></TextBlock>
+                    </Grid>
+                </Button>
+                <Button x:Name="DriversButton" Click="DriversButton_Click" Margin="0,15,0,0"  Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="DriversLicense" VerticalAlignment="Center"/>
+                        <TextBlock Margin="25,0,0,0" HorizontalAlignment="Left" Text="{DynamicResource m_UserOrder_Drivers}" FontSize="16" Foreground="White"></TextBlock>
+                    </Grid>
+                </Button>
+                <Button x:Name="OrdersButton" Click="OrdersButton_Click"  Margin="0,15,0,0" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="OrderAlphabeticalAscending" VerticalAlignment="Center"/>
+                        <TextBlock Margin="25,0,0,0" HorizontalAlignment="Left" Text="{DynamicResource m_UserOrder_Orders}" FontSize="16" Foreground="White"></TextBlock>
+                    </Grid>
+                </Button>
+                <Button Margin="0,15,0,0" x:Name="SettingsButton" Click="SettingsButton_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="Settings" VerticalAlignment="Center"/>
+                        <TextBlock Margin="25,0,0,0" HorizontalAlignment="Left" Text="{DynamicResource m_User_Settings}" FontSize="16" Foreground="White"></TextBlock>
+                    </Grid>
+                </Button>
+                <Button Margin="0,15,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Click="Exit_Click">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="Logout" VerticalAlignment="Center"/>
+                        <TextBlock Margin="25,0,0,0" HorizontalAlignment="Left" Text="{DynamicResource m_User_Logout}" FontSize="16" Foreground="White"></TextBlock>
+                    </Grid>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="GridBottomBar" Grid.ColumnSpan="2" Background="#ffd300" MouseDown="GridBottomBar_MouseDown">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="Power" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="25" Height="25" Click="Power_Click" Background="{x:Null}"  BorderBrush="{x:Null}" Foreground="White">
+                    <materialDesign:PackIcon Kind="Power"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
